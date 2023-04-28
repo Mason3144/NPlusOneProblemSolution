@@ -11,4 +11,4 @@ spring:
     show-sql: true      # (2) SQL 쿼리 출력
     properties:
       hibernate:
-        format_sql: true
+#        format_sql: true
