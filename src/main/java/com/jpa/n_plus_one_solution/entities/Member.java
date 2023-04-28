@@ -1,4 +1,4 @@
-package com.codestates.n_plus_one_problem;
+package com.jpa.n_plus_one_solution.entities;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
