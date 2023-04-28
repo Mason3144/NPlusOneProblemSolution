@@ -5,7 +5,6 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
-import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -21,12 +20,12 @@ public class Member {
     private String name;
 
     @OneToMany(mappedBy = "member")
-    private List<Orders> orders = new ArrayList<>();
+    private List<Order> orders = new ArrayList<>();
 
     public Member(String name) {
         this.name = name;
     }
-    public void addOrder(Orders orders) {
-        this.orders.add(orders);
+    public void addOrder(Order order) {
+        this.orders.add(order);
     }
 }
